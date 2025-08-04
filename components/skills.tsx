@@ -40,7 +40,7 @@ export default function Skills() {
   });
 
   return (
-    <section ref={ref} id="skills" className="py-20">
+    <section ref={ref} id="skills" className="py-20 px-4">
       <div className="container">
         <motion.div
           variants={fadeIn('up', 0.2)}

@@ -29,9 +29,10 @@ export default function Hero() {
           initial="hidden"
           animate={inView ? "show" : "hidden"}
           className='hidden md:flex md:items-center md:justify-center'>
-          <img src="hexagon.png" alt="" className='invert-[100%] blur-[2px] w-52 opacity-50 relative rotate-180 animate-spin-slow' />
-          <p className='absolute text-lg font-bold border-4 border-gray-500 bg-black rounded-full px-3 py-1'>MERN</p>
+          <img src="hexagon.png" alt="" className='invert-0 dark:invert-[100%] blur-[2px] w-52 opacity-70 relative rotate-180 animate-spin-slow' />
+          <p className='absolute text-lg font-bold border-4 border-gray-500 bg-secondary rounded-full px-3 py-1'>MERN</p>
         </motion.div>
+
         <div className="container flex flex-col items-center text-center w-[90vw] px-0 md:w-[65vw] md:px-6">
           <motion.div
             variants={fadeIn('up', 0.2)}
@@ -90,13 +91,14 @@ export default function Hero() {
             </Link>
           </motion.div>
         </div>
+        
         <motion.div
           variants={fadeIn('up', 0.2)}
           initial="hidden"
           animate={inView ? "show" : "hidden"}
           className='hidden md:flex md:items-center md:justify-center'>
-          <img src="hexagon.png" alt="" className='invert-[100%] blur-[2px] w-52 opacity-50 relative rotate-180 animate-spin-slow' />
-          <p className='absolute text-lg font-bold border-4 border-gray-500 bg-black rounded-full px-3 py-1'>Next JS</p>
+          <img src="hexagon.png" alt="" className='invert-0 dark:invert-[100%] blur-[2px] w-52 opacity-70 relative rotate-180 animate-spin-slow' />
+          <p className='absolute text-lg font-bold border-4 border-gray-500 bg-secondary rounded-full px-3 py-1'>Next JS</p>
         </motion.div>
       </div>
     </section>

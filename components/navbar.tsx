@@ -37,7 +37,7 @@ export default function Navbar() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className={cn(
-        'fixed top-0 z-50 w-full py-4 transition-all duration-300',
+        'fixed top-0 z-50 w-full py-4 px-3 transition-all duration-300',
         scrolled
           ? 'bg-background/80 backdrop-blur-md shadow-sm'
           : 'bg-transparent'
@@ -98,7 +98,7 @@ export default function Navbar() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-md shadow-md py-4"
+          className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-md shadow-md py-4 px-4"
         >
           <div className="container flex flex-col gap-4">
             {navLinks.map((link) => (

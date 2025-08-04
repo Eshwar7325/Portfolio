@@ -37,12 +37,20 @@ const certificatesData = [
     issuer: 'Solved competitive programming challenges and optimized algorithms to enhance problem-solving skills.',
   },
   {
-    title: 'HTML5, CSS3 - Infosys Springboard',
-    issuer: 'Developed responsive web pages using HTML5 and styled them with CSS3 to enhance user experience and accessibility.',
+    title: 'HTML5, CSS3, JavaScript - Infosys Springboard',
+    issuer: 'Developed responsive web pages using HTML5, styled them with CSS3, and added interactivity with JavaScript to enhance user experience and accessibility.',
   },
   {
     title: 'IIT Bombay - Python',
     issuer: 'A multiple-choice test certifying proficiency in Python programming, conducted by IIT Bombay.',
+  },
+  {
+    title: 'Node.js - Infosys Springboard',
+    issuer: 'Successfully completed the course Server-side Programming with Node.js for Beginners, enhancing skills in building scalable web applications using Node.js.',
+  },
+  {
+    title: 'AI Foundation - Hexart.In',
+    issuer: 'successfully completing the training on AI Foundation, by exploring AI fundamentals, learning Python and Machine Learning, and applied them through hands-on projects to build real-world skills.',
   },
 ];
 
@@ -64,7 +72,7 @@ export default function Education() {
   });
 
   return (
-    <section ref={ref} id="education" className="py-20">
+    <section ref={ref} id="education" className="py-20 px-4">
       <div className="container">
         <motion.div
           variants={fadeIn('up', 0.2)}
@@ -129,6 +137,7 @@ export default function Education() {
                 Certifications
               </h3>
 
+            <div className='max-h-[400px] overflow-y-auto'>
               <div className="space-y-4">
                 {certificatesData.map((cert, index) => (
                   <motion.div
@@ -137,13 +146,14 @@ export default function Education() {
                     initial="hidden"
                     animate={inView ? 'show' : 'hidden'}
                   >
-                    <Card className="p-5 h-full hover:shadow-md transition-shadow">
+                    <Card className="p-5 mr-2 h-full hover:shadow-md transition-shadow">
                       <h4 className="font-bold mb-2">{cert.title}</h4>
                       <p className="text-sm text-muted-foreground">{cert.issuer}</p>
                     </Card>
                   </motion.div>
                 ))}
               </div>
+            </div>
             </motion.div>
 
             <motion.div

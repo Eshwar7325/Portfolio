@@ -51,6 +51,14 @@ const projectsData = [
     github: 'https://github.com/Eshwar7325/Password-Manager',
     demo: null,
   },
+  {
+    title: 'Wordle Game',
+    description: 'A full-stack Wordle game built with React (frontend) and Node.js/Express (backend).',
+    image: './wordle.png',
+    tags: ['React', 'Tailwind CSS', 'Express.js', 'MongoDB'],
+    github: 'https://github.com/Eshwar7325/Wordle-Game',
+    demo: null,
+  },
 ];
 
 export default function Projects() {
@@ -60,7 +68,7 @@ export default function Projects() {
   });
 
   return (
-    <section ref={ref} id="projects" className="py-20 bg-muted/30">
+    <section ref={ref} id="projects" className="py-20 px-4 bg-muted/30">
       <div className="container">
         <motion.div
           variants={fadeIn('up', 0.2)}
@@ -76,7 +84,7 @@ export default function Projects() {
         </motion.div>
 
         {/* Mobile view with horizontal scroll */}
-        <div className="md:hidden overflow-x-auto pb-4 -mx-4 px-4">
+        <div className="md:hidden overflow-x-auto pb-4 ml-2">
           <div className="flex gap-4" style={{ width: 'max-content' }}>
             {projectsData.map((project, index) => (
               <motion.div

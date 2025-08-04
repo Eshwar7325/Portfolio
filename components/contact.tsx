@@ -72,7 +72,7 @@ export default function Contact() {
   };
 
   return (
-    <section ref={ref} id="contact" className="py-20">
+    <section ref={ref} id="contact" className="py-20 px-4">
       <div className="container">
         <motion.div
           variants={fadeIn('up', 0.2)}

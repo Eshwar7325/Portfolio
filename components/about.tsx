@@ -13,7 +13,7 @@ export default function About() {
   });
 
   return (
-    <section ref={ref} id="about" className="py-20 bg-muted/30">
+    <section ref={ref} id="about" className="py-20 px-4 bg-muted/30">
       <div className="container">
         <motion.div
           variants={fadeIn('up', 0.2)}
