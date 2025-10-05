@@ -17,7 +17,7 @@ const projectsData = [
     image: '/cafeteria.png',
     tags: ['Next.js', 'Supabase', 'React', 'Tailwind CSS'],
     github: 'https://github.com/Eshwar7325/CMRTC_Cafeteria',
-    demo: null,
+    demo: 'https://cmrtc-cafeteria.vercel.app',
   },
   {
     title: 'Plant Disease Detection',
@@ -25,7 +25,7 @@ const projectsData = [
     image: '/plant.png',
     tags: ['Python', 'TensorFlow', 'Keras', 'CNN', 'Streamlit'],
     github: 'https://github.com/Eshwar7325/Plant-Disease-Detection',
-    demo: null,
+    demo: 'https://plant-disease-detection-dl.streamlit.app',
   },
   {
     title: 'SAFE (Safety Alert For Finite Environment)',
@@ -33,7 +33,7 @@ const projectsData = [
     image: './safe.png',
     tags: ['HTML', 'CSS', 'JS', 'Flask'],
     github: 'https://github.com/Eshwar7325/SAFE',
-    demo: null,
+    demo: 'https://safe-656r.onrender.com',
   },
   {
     title: 'Spotify Clone Website',
@@ -49,7 +49,7 @@ const projectsData = [
     image: './password.png',
     tags: ['React', 'Tailwind CSS', 'Express.js', 'MongoDB'],
     github: 'https://github.com/Eshwar7325/Password-Manager',
-    demo: null,
+    demo: 'https://password-manager-indol-nine.vercel.app',
   },
   {
     title: 'Wordle Game',
@@ -57,7 +57,7 @@ const projectsData = [
     image: './wordle.png',
     tags: ['React', 'Tailwind CSS', 'Express.js', 'MongoDB'],
     github: 'https://github.com/Eshwar7325/Wordle-Game',
-    demo: null,
+    demo: 'https://wordle-game-liard.vercel.app',
   },
 ];
 
